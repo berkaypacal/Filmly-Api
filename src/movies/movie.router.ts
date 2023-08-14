@@ -20,7 +20,6 @@ export const moviesRouter = express.Router();
 moviesRouter.get("/", async (req: Request, res: Response) => {
   try {
     const movieItems: MovieItem[] = await MovieService.findAll();
-
     res.status(200).send(movieItems);
   } catch (e: any) {
     res.status(500).send(e.message);
