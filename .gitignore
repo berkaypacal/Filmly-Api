@@ -1,1 +1,8 @@
 node_modules
+.vercel
+.bin
+bin
+yarn-error.log
+.env
+dist
+.idea
