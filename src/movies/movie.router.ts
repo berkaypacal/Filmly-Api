@@ -2,14 +2,14 @@
  * Required External Modules and Interfaces
  */
 
-import express, { Request, Response } from "express";
+import { Request, Response, Router } from "express";
 import { Movie, MovieItem } from "./movie.interface";
 import * as MovieService from "./movies.service";
 
 /**
  * Router Definition
  */
-export const moviesRouter = express.Router();
+export const moviesRouter: Router = Router();
 
 /**
  * Controller Definitions
